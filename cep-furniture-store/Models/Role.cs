@@ -12,5 +12,7 @@ namespace cep_furniture_store.Models
         public int id { get; set; }
         public string name { get; set; }
         public int status { get; set; }
+
+        public ICollection<User> Users { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using cep_furniture_store.Data;
+using cep_furniture_store.Helpers;
 using cep_furniture_store.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,6 +20,7 @@ namespace cep_furniture_store.Controllers
             _context = context;
         }
 
+        [Authorize]
         [HttpGet]
         public IEnumerable<Category> getAllCategory()
         {

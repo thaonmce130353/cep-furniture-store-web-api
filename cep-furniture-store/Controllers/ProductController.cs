@@ -1,12 +1,10 @@
 ﻿using cep_furniture_store.Data;
+using cep_furniture_store.Helpers;
 using cep_furniture_store.Models;
 using cep_furniture_store.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace cep_furniture_store.Controllers
 {
@@ -105,13 +103,6 @@ namespace cep_furniture_store.Controllers
             {
                 return BadRequest();
             }
-        }
-
-        [HttpGet("search/result")]
-        public IActionResult searchResult([FromQuery(Name = "keyword")] string keyword)
-        {
-            var products = _context.products.Where(p => p.name.Contains(keyword) || p.color.Contains(keyword));
-            return Ok(products);
         }
     }
 }

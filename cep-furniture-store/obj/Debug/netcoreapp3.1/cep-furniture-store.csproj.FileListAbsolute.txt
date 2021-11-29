@@ -79,3 +79,4 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-f
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\obj\Debug\netcoreapp3.1\cep-furniture-store.MvcApplicationPartsAssemblyInfo.cs
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
