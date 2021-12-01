@@ -1,5 +1,6 @@
 using cep_furniture_store.Data;
 using cep_furniture_store.Helpers;
+using cep_furniture_store.HubConfig;
 using cep_furniture_store.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +27,17 @@ namespace cep_furniture_store
             string sqlConnectionString = Configuration.GetConnectionString("WebApiDatabase");
             services.AddDbContextPool<ApplicationDbContext>(options => options
                 .UseSqlServer(sqlConnectionString));
-            services.AddCors();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder => builder
+                .WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            });
+
+            services.AddSignalR();
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
@@ -59,10 +70,7 @@ namespace cep_furniture_store
             app.UseStaticFiles();
 
             // global cors policy
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
+            app.UseCors("CorsPolicy");
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -83,6 +91,7 @@ namespace cep_furniture_store
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<NotifyHub>("/notify");
             });
         }
     }
