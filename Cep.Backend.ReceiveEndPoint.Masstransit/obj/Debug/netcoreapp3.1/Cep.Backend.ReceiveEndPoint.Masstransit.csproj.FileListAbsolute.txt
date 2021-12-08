@@ -64,6 +64,10 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\Saga.Components.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\Saga.Contracts.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\Saga.Components.pdb
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\Saga.Contracts.pdb
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.csproj.AssemblyReference.cache
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.GeneratedMSBuildEditorConfig.editorconfig
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.AssemblyInfoInputs.cache
@@ -78,3 +82,4 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.pdb
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.Masstransit.genruntimeconfig.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint.Masstransit\bin\Debug\netcoreapp3.1\nunit.framework.dll

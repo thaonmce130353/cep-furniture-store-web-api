@@ -1,0 +1,10 @@
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\bin\Debug\netcoreapp3.1\Saga.Contracts.deps.json
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\bin\Debug\netcoreapp3.1\Saga.Contracts.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\bin\Debug\netcoreapp3.1\Saga.Contracts.pdb
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.AssemblyInfoInputs.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.AssemblyInfo.cs
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.csproj.CoreCompileInputs.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.pdb
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.csproj.AssemblyReference.cache
