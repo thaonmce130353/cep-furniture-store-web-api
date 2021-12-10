@@ -1,6 +1,0 @@
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.csproj.AssemblyReference.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.GeneratedMSBuildEditorConfig.editorconfig
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.AssemblyInfoInputs.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.AssemblyInfo.cs
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.csproj.CoreCompileInputs.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\OO.CEP.ReceiveEndPoint\obj\Debug\netcoreapp3.1\OO.CEP.ReceiveEndPoint.MvcApplicationPartsAssemblyInfo.cache
