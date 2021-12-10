@@ -7,4 +7,3 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.csproj.CoreCompileInputs.cache
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.pdb
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Saga.Contracts\obj\Debug\netcoreapp3.1\Saga.Contracts.csproj.AssemblyReference.cache

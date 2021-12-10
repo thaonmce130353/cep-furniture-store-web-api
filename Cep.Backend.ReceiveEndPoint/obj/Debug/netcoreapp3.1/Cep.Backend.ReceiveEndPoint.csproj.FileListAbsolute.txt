@@ -4,17 +4,6 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.runtimeconfig.dev.json
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.pdb
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.GeneratedMSBuildEditorConfig.editorconfig
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.AssemblyInfoInputs.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.AssemblyInfo.cs
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.csproj.CoreCompileInputs.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.csproj.CopyComplete
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.pdb
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.genruntimeconfig.cache
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -36,6 +25,8 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
@@ -45,6 +36,7 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -63,3 +55,11 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.B
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.csproj.AssemblyReference.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.GeneratedMSBuildEditorConfig.editorconfig
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.AssemblyInfoInputs.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.AssemblyInfo.cs
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.csproj.CoreCompileInputs.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.csproj.CopyComplete
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.pdb
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\Cep.Backend.ReceiveEndPoint\obj\Debug\netcoreapp3.1\Cep.Backend.ReceiveEndPoint.genruntimeconfig.cache

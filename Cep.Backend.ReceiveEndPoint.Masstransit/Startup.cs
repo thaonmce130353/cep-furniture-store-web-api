@@ -1,5 +1,6 @@
 using Cep.Backend.ReceiveEndPoint.Masstransit.Consumers;
 using Cep.Backend.ReceiveEndPoint.Masstransit.Data;
+using Cep.Backend.ReceiveEndPoint.Masstransit.StateMachine;
 using MassTransit;
 using MassTransit.Saga;
 using Microsoft.AspNetCore.Builder;
@@ -11,10 +12,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Saga.Components.StateMachine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Cep.Backend.ReceiveEndPoint.Masstransit
@@ -31,15 +32,15 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string sqlConnectionString = Configuration.GetConnectionString("WebApiDatabase");
-            services.AddDbContextPool<ApplicationDbContext>(options => options
-                .UseSqlServer(sqlConnectionString));
+            //string sqlConnectionString = Configuration.GetConnectionString("WebApiDatabase");
+            //services.AddDbContextPool<ApplicationDbContext>(options => options
+            //    .UseSqlServer(sqlConnectionString));
 
             services.AddControllers();
 
             services.AddMassTransit(x =>
             {
-                x.AddConsumer<CategoryConsumer>();
+                //x.AddConsumer<CategoryConsumer>();
 
                 var machine = new OrderStateMachine();
                 var repository = new InMemorySagaRepository<OrderState>();
@@ -58,6 +59,22 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit
                         e.StateMachineSaga(machine, repository);
                     });
                 }));
+
+                //state machine with entity framework core
+                //x.AddSagaStateMachine<OrderStateMachine, OrderState>()
+                //    .EntityFrameworkRepository(r =>
+                //    {
+                //       r.ConcurrencyMode = ConcurrencyMode.Pessimistic; // or use Optimistic, which requires RowVersion
+
+                //        r.AddDbContext<DbContext, OrderStateDbContext>((provider, builder) =>
+                //       {
+                //           builder.UseSqlServer(sqlConnectionString, m =>
+                //           {
+                //               m.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name);
+                //               m.MigrationsHistoryTable($"__{nameof(OrderStateDbContext)}");
+                //           });
+                //       });
+                //   });
             });
 
             services.AddMassTransitHostedService();

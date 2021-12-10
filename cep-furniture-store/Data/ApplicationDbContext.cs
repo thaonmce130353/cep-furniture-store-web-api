@@ -14,6 +14,7 @@ namespace cep_furniture_store.Data
         public DbSet<Role> roles { get; set; }
         public DbSet<Category> categories { get; set; }
         public DbSet<SubCategory> subCategories { get; set; }
+        public DbSet<Order> orders { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

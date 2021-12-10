@@ -9,6 +9,7 @@ namespace Saga.Contracts
     public class SubmitOrder : ISubmitOrder
     {
         public Guid OrderId { get; set; }
-        public DateTime? OrderDate { get; set; }
+        public string OrderDate { get; set; }
+        public string status;
     }
 }

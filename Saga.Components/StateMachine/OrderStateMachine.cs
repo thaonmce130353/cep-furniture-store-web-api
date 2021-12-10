@@ -1,6 +1,9 @@
 ﻿using Automatonymous;
 using System;
 using Saga.Contracts;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using MassTransit.EntityFrameworkCoreIntegration.Mappings;
+using Microsoft.EntityFrameworkCore;
 
 namespace Saga.Components.StateMachine
 {
@@ -12,6 +15,19 @@ namespace Saga.Components.StateMachine
         public DateTime? OrderDate { get; set; }
     }
 
+    public class OrderStateMap :
+    SagaClassMap<OrderState>
+    {
+        protected override void Configure(EntityTypeBuilder<OrderState> entity, ModelBuilder model)
+        {
+            entity.Property(x => x.CurrentState).HasMaxLength(64);
+            entity.Property(x => x.OrderDate);
+
+            // If using Optimistic concurrency, otherwise remove this property
+            //entity.Property(x => x.RowVersion).IsRowVersion();
+        }
+    }
+
     public class OrderStateMachine : MassTransitStateMachine<OrderState>
     {
         public OrderStateMachine()
@@ -21,7 +37,6 @@ namespace Saga.Components.StateMachine
             Initially(
             When(SubmitOrder)
                 .Then(x => test("Initially"))
-                .Then(x => x.Instance.OrderDate = x.Data.OrderDate)
                 .Publish(x => (IOrderAccepted)new OrderAccepted
                 {
                     OrderId = x.Instance.CorrelationId,

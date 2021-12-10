@@ -1661,28 +1661,13 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "NUnit": "3.13.2",
           "Newtonsoft.Json": "13.0.1",
-          "Saga.Components": "1.0.0"
-        },
-        "runtime": {
-          "Cep.Backend.ReceiveEndPoint.Masstransit.dll": {}
-        },
-        "compile": {
-          "Cep.Backend.ReceiveEndPoint.Masstransit.dll": {}
-        }
-      },
-      "Saga.Components/1.0.0": {
-        "dependencies": {
-          "MassTransit": "7.2.4",
-          "MassTransit.AspNetCore": "7.2.4",
-          "MassTransit.Extensions.DependencyInjection": "7.2.4",
-          "MassTransit.RabbitMQ": "7.2.4",
           "Saga.Contracts": "1.0.0"
         },
         "runtime": {
-          "Saga.Components.dll": {}
+          "Cep.Backend.ReceiveEndPoint.Masstransit.dll": {}
         },
         "compile": {
-          "Saga.Components.dll": {}
+          "Cep.Backend.ReceiveEndPoint.Masstransit.dll": {}
         }
       },
       "Saga.Contracts/1.0.0": {
@@ -4138,11 +4123,6 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "Cep.Backend.ReceiveEndPoint.Masstransit/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Saga.Components/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

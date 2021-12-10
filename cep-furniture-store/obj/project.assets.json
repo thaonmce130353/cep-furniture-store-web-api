@@ -1769,7 +1769,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "NUnit": "3.13.2",
           "Newtonsoft.Json": "13.0.1",
-          "Saga.Components": "1.0.0"
+          "Saga.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Cep.Backend.ReceiveEndPoint.Masstransit.dll": {}
@@ -1780,23 +1780,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "Saga.Components/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MassTransit": "7.2.4",
-          "MassTransit.AspNetCore": "7.2.4",
-          "MassTransit.Extensions.DependencyInjection": "7.2.4",
-          "MassTransit.RabbitMQ": "7.2.4",
-          "Saga.Contracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Saga.Components.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Saga.Components.dll": {}
-        }
       },
       "Saga.Contracts/1.0.0": {
         "type": "project",
@@ -6585,11 +6568,6 @@
       "type": "project",
       "path": "../Cep.Backend.ReceiveEndPoint.Masstransit/Cep.Backend.ReceiveEndPoint.Masstransit.csproj",
       "msbuildProject": "../Cep.Backend.ReceiveEndPoint.Masstransit/Cep.Backend.ReceiveEndPoint.Masstransit.csproj"
-    },
-    "Saga.Components/1.0.0": {
-      "type": "project",
-      "path": "../Saga.Components/Saga.Components.csproj",
-      "msbuildProject": "../Saga.Components/Saga.Components.csproj"
     },
     "Saga.Contracts/1.0.0": {
       "type": "project",

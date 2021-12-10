@@ -8,6 +8,6 @@ namespace Saga.Contracts
     public class OrderAccepted : IOrderAccepted 
     {
         public Guid OrderId { get; set; }
-        public DateTime Timestamp { get; set; }
+        public string Timestamp { get; set; }
     }
 }

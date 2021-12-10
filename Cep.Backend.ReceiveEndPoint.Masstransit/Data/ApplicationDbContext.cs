@@ -10,15 +10,13 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit.Data
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Category> categories { get; set; }
+        public DbSet<Order> orders{ get; set; }
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-            Database.EnsureCreated();
-        }
+        public ApplicationDbContext() { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            optionsBuilder.UseSqlServer(@"Data Source=localhost; Initial Catalog=cep-furniture-store; User Id=sa; Password=123456");
         }
     }
 }
