@@ -64,10 +64,8 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit.StateMachine
 
         public async void handleStateChange(OrderState instance)
         {
-
             await using (var _context = new ApplicationDbContext())
             {
-                
                 if (instance.CurrentState == "Submitted")
                 {
                     _context.orders.Add(new Order
@@ -76,14 +74,17 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit.StateMachine
                         OrderId = instance.CorrelationId,
                         status = instance.CurrentState
                     });
+
                     _context.SaveChanges();
                 }
                 else
                 {
                     var order = _context.orders.First(a => a.OrderId == instance.CorrelationId);
                     order.status = instance.CurrentState;
+
                     _context.orders.Attach(order);
                     _context.Entry(order).Property(x => x.status).IsModified = true;
+
                     if (instance.CurrentState == "Completed")
                     {
                         _context.SaveChanges();

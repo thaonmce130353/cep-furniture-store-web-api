@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cep.Backend.ReceiveEndPoint
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Saga.Contracts", "Saga.Contracts\Saga.Contracts.csproj", "{DECC5A5A-CB54-4A92-90E2-8AC48C8C8F35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.MediatR.Practice", "CQRS.MediatR.Practice\CQRS.MediatR.Practice.csproj", "{EDCB39E0-65AE-4CE8-B8C7-99A993464318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DECC5A5A-CB54-4A92-90E2-8AC48C8C8F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DECC5A5A-CB54-4A92-90E2-8AC48C8C8F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DECC5A5A-CB54-4A92-90E2-8AC48C8C8F35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCB39E0-65AE-4CE8-B8C7-99A993464318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCB39E0-65AE-4CE8-B8C7-99A993464318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCB39E0-65AE-4CE8-B8C7-99A993464318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCB39E0-65AE-4CE8-B8C7-99A993464318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
