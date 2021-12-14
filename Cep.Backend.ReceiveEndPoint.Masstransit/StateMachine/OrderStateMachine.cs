@@ -48,13 +48,13 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit.StateMachine
             SetCompletedWhenFinalized();
 
             Event(() => SubmitOrder, x => x.CorrelateById(context => context.Message.OrderId));
-            Event(() => OrderSubmitted, x => x.CorrelateById(context => context.Message.OrderId));
+            //Event(() => OrderSubmitted, x => x.CorrelateById(context => context.Message.OrderId));
             Event(() => OrderAccepted, x => x.CorrelateById(context => context.Message.OrderId));
             Event(() => OrderCompleted, x => x.CorrelateById(context => context.Message.OrderId));
         }
 
         public Event<ISubmitOrder> SubmitOrder { get; private set; }
-        public Event<IOrderSubmitted> OrderSubmitted { get; private set; }
+        //public Event<IOrderSubmitted> OrderSubmitted { get; private set; }
         public Event<IOrderAccepted> OrderAccepted { get; private set; }
         public Event<IOrderCompleted> OrderCompleted { get; private set; }
 

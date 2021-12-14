@@ -10,18 +10,20 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit.Consumers
     public class CategoryConsumer : IConsumer<Category>
     {
         ILogger<CategoryConsumer> _logger;
-        private readonly ApplicationDbContext _context;
-        public CategoryConsumer(ILogger<CategoryConsumer> logger, ApplicationDbContext context)
+        public CategoryConsumer(ILogger<CategoryConsumer> logger)
         {
             _logger = logger;
-            _context = context;
         }
 
         public async Task Consume(ConsumeContext<Category> context)
         {
-            Category category = context.Message;
-            _context.categories.Add(category);
-            _context.SaveChanges();
+            using (var _context = new ApplicationDbContext())
+            {
+                Category category = context.Message;
+                _context.categories.Add(category);
+                _context.SaveChanges();
+            }
+                
             await Console.Out.WriteLineAsync(context.Message.name);
             _logger.LogInformation("Category: {Value}", context.Message.name);
         }

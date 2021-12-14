@@ -44,6 +44,7 @@ namespace cep_furniture_store.Controllers
                     status = category.status
                 };
                 await _publishEndpoint.Publish<cbrm.Category>(categoryDb);
+
                 //RabbitMQClient client = new RabbitMQClient();
                 //client.SendMessage(category);
                 //client.Close();

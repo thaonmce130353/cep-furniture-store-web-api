@@ -32,15 +32,11 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //string sqlConnectionString = Configuration.GetConnectionString("WebApiDatabase");
-            //services.AddDbContextPool<ApplicationDbContext>(options => options
-            //    .UseSqlServer(sqlConnectionString));
-
             services.AddControllers();
 
             services.AddMassTransit(x =>
             {
-                //x.AddConsumer<CategoryConsumer>();
+                x.AddConsumer<CategoryConsumer>();
 
                 var machine = new OrderStateMachine();
                 var repository = new InMemorySagaRepository<OrderState>();
@@ -49,32 +45,16 @@ namespace Cep.Backend.ReceiveEndPoint.Masstransit
                 {
                     cfg.Host(new Uri("amqps://elgfojpi:aIaPZPD-CRKBR0xQgMqzgST6iWBxTfx0@fox.rmq.cloudamqp.com/elgfojpi"));
 
-                    //cfg.ReceiveEndpoint("category-queue", ep =>
-                    //{
-                    //    ep.ConfigureConsumer<CategoryConsumer>(provider);
-                    //});
+                    cfg.ReceiveEndpoint("category-queue", ep =>
+                    {
+                        ep.ConfigureConsumer<CategoryConsumer>(provider);
+                    });
 
                     cfg.ReceiveEndpoint("order", e =>
                     {
                         e.StateMachineSaga(machine, repository);
                     });
                 }));
-
-                //state machine with entity framework core
-                //x.AddSagaStateMachine<OrderStateMachine, OrderState>()
-                //    .EntityFrameworkRepository(r =>
-                //    {
-                //       r.ConcurrencyMode = ConcurrencyMode.Pessimistic; // or use Optimistic, which requires RowVersion
-
-                //        r.AddDbContext<DbContext, OrderStateDbContext>((provider, builder) =>
-                //       {
-                //           builder.UseSqlServer(sqlConnectionString, m =>
-                //           {
-                //               m.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name);
-                //               m.MigrationsHistoryTable($"__{nameof(OrderStateDbContext)}");
-                //           });
-                //       });
-                //   });
             });
 
             services.AddMassTransitHostedService();
