@@ -46,8 +46,8 @@ namespace CQRS.MediatR.Practice.Controllers
         public async Task<ActionResult> UpdateProduct(int productId, UpdateProduct.Command newProduct)
         {
             newProduct.id = productId;
-            await _mediator.Send(newProduct);
-            return Ok(newProduct);
+            var createdProductId = await _mediator.Send(newProduct);
+            return CreatedAtAction(nameof(GetProduct), new { productId = createdProductId }, null);
         }
     }
 }
