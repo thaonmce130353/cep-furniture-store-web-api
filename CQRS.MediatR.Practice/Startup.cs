@@ -1,4 +1,6 @@
 using CQRS.MediatR.Practice.Data;
+using CQRS.MediatR.Practice.PipelineBehaviours;
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,6 +50,10 @@ namespace CQRS.MediatR.Practice
             });
 
             services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddValidatorsFromAssembly(typeof(Startup).Assembly);
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
+
             services.AddControllers();
         }
 

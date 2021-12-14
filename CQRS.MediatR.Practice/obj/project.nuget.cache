@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ceXREBezjoT3eF5/bHmfg/7xE99R8YcyxF1jeZjzEyDY+txcdshYgA59crvcxRI46UvnoL6Gtr2COcT+PWgnZw==",
+  "dgSpecHash": "Smjk95YuKWm7TN9jQbul/rcsPHo1JNe2MbZcTroW25PB+kp3RiprmhTxBreOydZYH9N7ithvwJJsfGLn+XrdeA==",
   "success": true,
   "projectFilePath": "E:\\Study\\AngularJS\\cep-furniture-store-webAPIs\\cep-furniture-store-web-api\\CQRS.MediatR.Practice\\CQRS.MediatR.Practice.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

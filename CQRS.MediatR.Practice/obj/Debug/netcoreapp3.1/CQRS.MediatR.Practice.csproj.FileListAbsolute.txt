@@ -67,3 +67,5 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.MediatR.Practice\obj\Debug\netcoreapp3.1\CQRS.MediatR.Practice.genruntimeconfig.cache
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.MediatR.Practice\bin\Debug\netcoreapp3.1\MediatR.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.MediatR.Practice\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.MediatR.Practice\bin\Debug\netcoreapp3.1\FluentValidation.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CQRS.MediatR.Practice\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
