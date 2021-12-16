@@ -5,6 +5,7 @@ using cep_furniture_store.Models;
 using cep_furniture_store.TimerFeatures;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using ServiceStack.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,10 +20,16 @@ namespace cep_furniture_store.Controllers
         private readonly ApplicationDbContext _context;
 
         private IHubContext<NotifyHub> _hub;
-        public CategoryController(ApplicationDbContext context, IHubContext<NotifyHub> hub)
+        private readonly IRedisClientsManager _redisClientsManager;
+
+        public CategoryController(
+            ApplicationDbContext context, 
+            IHubContext<NotifyHub> hub, 
+            IRedisClientsManager redisClientsManager)
         {
             _context = context;
             _hub = hub;
+            _redisClientsManager = redisClientsManager;
         }
 
         [HttpGet]
@@ -34,12 +41,13 @@ namespace cep_furniture_store.Controllers
         [HttpPost("Add")]
         public IActionResult Add(Category category)
         {
-            _context.categories.Add(category);
-            _context.SaveChanges();
-            var categories = _context.categories.ToList();
-
-            _hub.Clients.All.SendAsync("transfercategorydata", categories);
-            
+            //_context.categories.Add(category);
+            //_context.SaveChanges();
+            using (IRedisClient redis = _redisClientsManager.GetClient())
+            {
+                var categories = _context.categories.ToList();
+                _hub.Clients.All.SendAsync("ReceiveMessage", categories.Count() + "");
+            }
             return Ok(category);
         }
     }

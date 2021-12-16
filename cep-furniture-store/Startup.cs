@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using ServiceStack.Redis;
 
 namespace cep_furniture_store
 {
@@ -38,6 +39,14 @@ namespace cep_furniture_store
             });
 
             services.AddSignalR();
+
+            services.AddSingleton<IRedisClientsManager>(c =>
+            {
+                var config = Configuration.GetSection("Redis").Get<string[]>();
+                //RedisConfig.DefaultMaxPoolSize = 1000;
+                return new RedisManagerPool(config);
+            });
+
             services.AddControllers();
 
             services.AddSwaggerGen(c =>

@@ -8,5 +8,6 @@ namespace cep_furniture_store.HubConfig
 {
     public class NotifyHub : Hub
     {
+        
     }
 }
