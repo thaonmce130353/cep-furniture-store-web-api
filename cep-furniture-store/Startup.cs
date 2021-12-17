@@ -43,7 +43,6 @@ namespace cep_furniture_store
             services.AddSingleton<IRedisClientsManager>(c =>
             {
                 var config = Configuration.GetSection("Redis").Get<string[]>();
-                //RedisConfig.DefaultMaxPoolSize = 1000;
                 return new RedisManagerPool(config);
             });
 
