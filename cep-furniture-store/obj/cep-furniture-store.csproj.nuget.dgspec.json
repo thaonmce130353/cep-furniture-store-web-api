@@ -44,14 +44,6 @@
               "target": "Package",
               "version": "[3.1.21, )"
             },
-            "Microsoft.AspNetCore.SignalR.Core": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            },
-            "Microsoft.AspNetCore.SignalR.StackExchangeRedis": {
-              "target": "Package",
-              "version": "[3.1.22, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.12, )"

@@ -1,6 +1,5 @@
 using cep_furniture_store.Data;
 using cep_furniture_store.Helpers;
-using cep_furniture_store.HubConfig;
 using cep_furniture_store.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,14 +35,6 @@ namespace cep_furniture_store
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials());
-            });
-
-            services.AddSignalR();
-
-            services.AddSingleton<IRedisClientsManager>(c =>
-            {
-                var config = Configuration.GetSection("Redis").Get<string[]>();
-                return new RedisManagerPool(config);
             });
 
             services.AddControllers();
@@ -99,7 +90,6 @@ namespace cep_furniture_store
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<NotifyHub>("/notify");
             });
         }
     }
