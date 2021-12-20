@@ -122,3 +122,4 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CFS.I
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CFS.IdentityServer4.Practice\obj\Debug\netcoreapp3.1\CFS.IdentityServer4.Practice.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CFS.IdentityServer4.Practice\obj\Debug\netcoreapp3.1\CFS.IdentityServer4.Practice.pdb
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CFS.IdentityServer4.Practice\obj\Debug\netcoreapp3.1\CFS.IdentityServer4.Practice.genruntimeconfig.cache
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\CFS.IdentityServer4.Practice\obj\Debug\netcoreapp3.1\CFS.IdentityServer4.Practice.csproj.AssemblyReference.cache

@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using IdentityServer4.Services;
+using Microsoft.Extensions.Logging;
 
 namespace CFS.IdentityServer4.Practice
 {
@@ -44,29 +46,39 @@ namespace CFS.IdentityServer4.Practice
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
-
-                // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
                 options.EmitStaticAudienceClaim = true;
             })
                 .AddInMemoryIdentityResources(Config.IdentityResources)
                 .AddInMemoryApiScopes(Config.ApiScopes)
                 .AddInMemoryClients(Config.Clients)
-                .AddAspNetIdentity<ApplicationUser>();
+                .AddAspNetIdentity<ApplicationUser>()
+                .AddDeveloperSigningCredential();
 
-            // not recommended for production - you need to store your key material somewhere secure
-            builder.AddDeveloperSigningCredential();
+            services.AddSingleton<ICorsPolicyService>((container) => {
+                var logger = container.GetRequiredService<ILogger<DefaultCorsPolicyService>>();
+                return new DefaultCorsPolicyService(logger)
+                {
+                    AllowAll = true
+                };
+            });
 
             services.AddAuthentication()
-                .AddGoogle(options =>
+             .AddLocalApi("Bearer", option =>
+             {
+                 option.ExpectedScope = "api.WebApp";
+             });
+
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Bearer", policy =>  // thêm một cái chính sách
                 {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                    
-                    // register your IdentityServer with Google at https://console.developers.google.com
-                    // enable the Google+ API
-                    // set the redirect URI to https://localhost:5001/signin-google
-                    options.ClientId = "984126841994-nnii661k2a5ogh3vi42nlq6e6t5a7mri.apps.googleusercontent.com";
-                    options.ClientSecret = "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";
+                    policy.AddAuthenticationSchemes("Bearer");
+                    policy.RequireAuthenticatedUser();
                 });
+            });
+
+
         }
 
         public void Configure(IApplicationBuilder app)
@@ -74,11 +86,9 @@ namespace CFS.IdentityServer4.Practice
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
 
             app.UseStaticFiles();
-
             app.UseRouting();
             app.UseIdentityServer();
             app.UseAuthorization();

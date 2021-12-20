@@ -21,12 +21,6 @@ namespace CFS.IdentityServer4.Practice
         {
             var services = new ServiceCollection();
             services.AddLogging();
-            services.AddDbContext<ApplicationDbContext>(options =>
-               options.UseSqlServer(connectionString));
-
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
 
             using (var serviceProvider = services.BuildServiceProvider())
             {

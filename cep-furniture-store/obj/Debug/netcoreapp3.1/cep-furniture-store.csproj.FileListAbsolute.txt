@@ -9,6 +9,7 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-f
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\cep-furniture-store.Views.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Humanizer.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -32,6 +33,10 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-f
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Common.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Redis.dll
+E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -69,8 +74,3 @@ E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-f
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\obj\Debug\netcoreapp3.1\cep-furniture-store.dll
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\obj\Debug\netcoreapp3.1\cep-furniture-store.pdb
 E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\obj\Debug\netcoreapp3.1\cep-furniture-store.genruntimeconfig.cache
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Common.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Redis.dll
-E:\Study\AngularJS\cep-furniture-store-webAPIs\cep-furniture-store-web-api\cep-furniture-store\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
